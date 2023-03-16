@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tayyibah</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+</head>
+
+<body>
+        <div id="header" class="container-fluid p-4 d-flex flex-row border-bottom"> 
+            <!-- felx containers add things and arrange them in a row. Makes them alligned-->
+            <h2> Tayyibah</h2>
+                    <div class="pl-4">
+                        <button  class="btn btn-link"> About</button>
+                        <button  class="btn btn-link"> Timeline</button>
+                        <button  class="btn btn-link"> Projects</button>
+                        <button  class="btn btn-link"> Contact</button>
+                    </div>
+        </div>
+
+        <div id="body" class="container-fluid d-flex">
+                <div class="container-fluid overflow auto" id="midbody" style="height:750px"> 
+                    <br><br><br><br>
+                        <!-- overflow auto will allow you to scroll. If you don't use this then 
+                        instead of scrolling it will scroll over the div, not in it-->
+                            <div id="about" class="container p-5">
+                            <!-- continer fluid spans over the entire page, while container only 
+                            takes up the amount of space it needs and it stays in the middle-->
+                                <p class="text-danger" style="font-size: 19px">
+                                        Hi my name is
+                                </p>
+                                <h1 class="display-1"> Tayyibah</h1>
+                                <!-- you can do this using CSS, but these are options from bootstrap-->
+
+                                <p class="rounded bg-light p-3 text-info" style="font-size:20px"> 
+                                    Etiam sit amet vehicula sem. Suspendisse potenti. Pellentesque interdum nisl nec nunc scelerisque sollicitudin. 
+                                    Pellentesque euismod tempus tempor. Ut ut nibh luctus, efficitur velit vel, ullamcorper justo. Mauris eget nibh 
+                                    id odio auctor mattis. Nam sit amet vehicula libero, vel dignissim sem. Proin ut augue ex. Ut eleifend dui at elit
+                                     sollicitudin viverra. Donec laoreet sagittis iaculis. Quisque lectus nunc, commodo et ipsum non, tincidunt 
+                                     ultricies est. In diam eros, mattis sit amet malesuada vel, rutrum fringilla tortor. Integer et elit ligula. 
+                                     Duis eu sagittis velit, eget tempor purus. Vestibulum laoreet, tortor et bibendum mattis, lorem risus sagittis 
+                                     arcu, sit amet condimentum risus nibh ac quam. Nullam erat velit, maximus et rhoncus nec, mollis vitae ex. 
+                                </p>
+                                <button id="resumeButton" class="btn btn-warning">Check out my Resume </button>
+                            </div>
+                <br><br><br><br>
+                            <div id="timeline" class="bg-light container rounded lineUp p-5">
+                                <h1 class="display-4 text-primary">Timeline</h1>
+                                <div class="mb-5">
+                                    <h2 class="text-secondary">2017</h2>
+                                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, 
+                                    ad nec admodum perfecto mnesarchum, vim ea mazim fierent
+                                     detracto. Ea quis iuvaret expetendis his, te elit voluptua 
+                                     dignissim per, habeo iusto primis ea eam.</p>
+                                </div>
+                                <div class="mb-5">
+                                    <h2 class="text-secondary">2017</h2>
+                                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, 
+                                        ad nec admodum perfecto mnesarchum, vim ea mazim fierent
+                                         detracto. Ea quis iuvaret expetendis his, te elit voluptua
+                                          dignissim per, habeo iusto primis ea eam.</p>
+                                </div>
+                            </div>
+                <br><br><br><br>
+                            <div id="projects" class="bg-light contianer rounded p-5"> 
+                                <h1 class="diplay-4 text-primary mb-5"> Projects </h1>
+                                    <div class="container-fluid d-flex">
+                                        <div class="container fluid bg-primary rounded-circle" style="background-image: url('C:\Users\user\OneDrive\Pictures\Documents\PMU files\Portfolio\emblem.jpg');"> </div>
+                                    </div>
+                            </div>
+                <br><br><br><br>
+
+                            <div id="contact" class="container rounded d-flex flex-column bg-light p-5" style="width:400px">
+                                <h1 class="text-primary mb-5 text-center">Contact Me!</h1>
+                                    <div id="prompt" class="align-items-center" style="display: none !important;">
+                                        <small><p class="text-center text-danger">Copied!</p></small>
+                                            <textarea id="hidURL" style="display:block" readonly></textarea>
+                                    </div>                            
+                                    <div class="container d-flex rounded justify-content-around p-3" style="background-color: rgb(236, 236, 236);">
+                                        <a href="#">Linked in</a>
+                                        <a href="#">Github</a>
+                                        <a href="#">email@email.com</a>
+                                    </div>
+                            </div>       
+                </div>
+        </div>
+</body>
+</html>
