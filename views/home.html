@@ -59,14 +59,14 @@
 </script>
 
 <body>
-        <div id="header" class="container-fluid p-4 d-flex flex-row border-bottom"> 
+        <div id="header" class="container-fluid p-4 d-flex flex-row border-bottom" style="height:100px"> 
             <!-- felx containers add things and arrange them in a row. Makes them alligned-->
-            <h2> Tayyibah</h2>
-                    <div class="pl-4">
-                        <button  class="btn btn-link"> About</button>
-                        <button  class="btn btn-link"> Timeline</button>
-                        <button  class="btn btn-link"> Projects</button>
-                        <button  class="btn btn-link"> Contact</button>
+            <h2 id="smallName" style="position: relative; top:4px"> Tayyibah</h2>
+                    <div class=" d-flex pl-4">
+                        <button id="aboutBtn" class="btn btn-link"> About</button>
+                        <button id="timeBtn" class="btn btn-link"> Timeline</button>
+                        <button id="projBtn" class="btn btn-link"> Projects</button>
+                        <button id="contBtn" class="btn btn-link"> Contact</button>
                     </div>
         </div>
 
@@ -75,7 +75,7 @@
                     <br><br><br><br>
                         <!-- overflow auto will allow you to scroll. If you don't use this then 
                         instead of scrolling it will scroll over the div, not in it-->
-                            <div id="about" class="container p-5">
+                            <div id="about" class="container p-5 lineUp">
                             <!-- continer fluid spans over the entire page, while container only 
                             takes up the amount of space it needs and it stays in the middle-->
                                 <p class="text-danger" style="font-size: 19px">
@@ -95,6 +95,7 @@
                                 </p>
                                 <button id="resumeButton" class="btn btn-warning">Check out my Resume </button>
                             </div>
+
                 <br><br><br><br>
                             <div id="timeline" class="bg-light container rounded lineUp p-5">
                                 <h1 class="display-4 text-primary">Timeline</h1>
@@ -113,12 +114,28 @@
                                           dignissim per, habeo iusto primis ea eam.</p>
                                 </div>
                             </div>
+
                 <br><br><br><br>
-                            <div id="projects" class="bg-light contianer rounded p-5"> 
-                                <h1 class="diplay-4 text-primary mb-5"> Projects </h1>
+                            <div id="projects" class="bg-light contianer rounded lineUp p-5"> 
+                                <h1 id="projHeading" class="diplay-4 text-primary mb-5"> Projects </h1>
                                     <div class="container-fluid d-flex">
-                                        <div class="container fluid bg-primary rounded-circle" style="background-image: url('C:\Users\user\OneDrive\Pictures\Documents\PMU files\Portfolio\emblem.jpg');"> </div>
+                                        <div class="container fluid bg-primary rounded-circle" style="background-image: url('C:\Users\user\OneDrive\Pictures\Documents\PMU files\GitHub Portfolio\MyPortfolio\Public\Images\db.png');"> </div>
+                                        <div class="container-fluid rounded p-4" style="width:700px; background-color: rgb(236, 236, 236);">
+                                            <h3 class="text-success">Project 1</h3>
+                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci,
+                                                 ad nec admodum perfecto mnesarchum, vim ea mazim fierent 
+                                                 detracto. Ea quis iuvaret expetendis his, te elit voluptua
+                                                  dignissim per, habeo iusto primis ea eam.</p>
+                                            </div>
                                     </div>
+                                    <br><br>
+                                    <div class="d-flex container-fluid">
+                                        <div class="container-fluid rounded p-4" style="width:700px; background-color: rgb(236, 236, 236);">
+                                            <h3 class="text-success">Project 2</h3>
+                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                                        </div>
+                                        <div class="projectImage container-fluid bg-primary rounded-circle" style="background-image: url('Images/db.png');"></div>
+                                    </div>                 
                             </div>
                 <br><br><br><br>
 
@@ -129,9 +146,9 @@
                                             <textarea id="hidURL" style="display:block" readonly></textarea>
                                     </div>                            
                                     <div class="container d-flex rounded justify-content-around p-3" style="background-color: rgb(236, 236, 236);">
-                                        <a href="#">Linked in</a>
-                                        <a href="#">Github</a>
-                                        <a href="#">email@email.com</a>
+                                        <img id='github' src="/Images/github.png" width="30" style="cursor: pointer;"/>
+                       <img id='linkedin' src="/Images/linkedin.png" width="30" style="cursor: pointer;"/>
+                       <img id='email' src="/Images/email.png" width="30"  style="cursor: pointer;"/>
                                     </div>
                             </div>       
                 </div>
